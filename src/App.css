@@ -1,0 +1,22 @@
+.App {
+  max-width: 70rem;
+  margin: 5rem auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem 2rem 2rem;
+}
+
+.details-time {
+  text-align: left;
+  width: 11rem;
+}

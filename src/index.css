@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+:root {
+  --color-primary-dark: #9e9898;
+  --color-primary-medium: #e7d7c3;
+  --color-primary-light: #f7f7f7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  /* 10px/16px = 62.5% -> 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Handlee', cursive;
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+  background: var(--color-primary-dark);
+  color: var(--color-primary-light);
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  background: var(--color-primary-light);
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  color: var(--color-primary-dark);
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 2rem;
+  margin: 2rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+
+  transition: all 0.2s;
+}
+
+button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* 500px/16px = 31.25em */
+@media only screen and (max-width: 31.25em) {
+  html {
+    /* 1rem = 8px = 8/16 = 50% */
+    font-size: 50%;
+  }
+}
+
+/* 400px/16px = 25em */
+@media only screen and (max-width: 25em) {
+  html {
+    /* 1rem = 6px = 6/16 = 37.5% */
+    font-size: 37.5%;
+  }
+}

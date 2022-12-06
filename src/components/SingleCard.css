@@ -1,0 +1,49 @@
+.card {
+  position: relative;
+}
+
+.card__content,
+.card__cover {
+  width: 15rem;
+  height: 20rem;
+  overflow: hidden;
+  background-color: var(--color-primary-medium);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+  /* hide the back side of the cards */
+  backface-visibility: hidden;
+
+  transition: all 0.4s ease-in;
+}
+
+.card__content {
+  /* stack two cards back to back */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.card__content img {
+  width: 140%;
+}
+
+.card__cover img {
+  height: 100%;
+}
+
+.isFlipped {
+  perspective: 150rem;
+}
+
+.isFlipped .card__content {
+  transform: rotateY(0);
+}
+
+.isFlipped .card__cover {
+  transform: rotateY(-180deg);
+}
