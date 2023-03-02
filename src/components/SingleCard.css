@@ -1,11 +1,11 @@
 .card {
   position: relative;
+  width: 100%;
 }
 
 .card__content,
 .card__cover {
-  width: 15rem;
-  height: 20rem;
+  aspect-ratio: 3/4;
   overflow: hidden;
   background-color: var(--color-primary-medium);
   display: flex;

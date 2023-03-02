@@ -58,18 +58,10 @@ button:active {
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
 }
 
-/* 500px/16px = 31.25em */
-@media only screen and (max-width: 31.25em) {
+/* 560px/16px = 35em */
+@media only screen and (max-width: 35em) {
   html {
-    /* 1rem = 8px = 8/16 = 50% */
-    font-size: 50%;
-  }
-}
-
-/* 400px/16px = 25em */
-@media only screen and (max-width: 25em) {
-  html {
-    /* 1rem = 6px = 6/16 = 37.5% */
-    font-size: 37.5%;
+    /* 1rem = 9px = 9/16 = 56.25% */
+    font-size: 56.25%;
   }
 }

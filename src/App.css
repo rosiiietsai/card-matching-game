@@ -8,6 +8,7 @@
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
   justify-items: center;
+  margin: 0 2rem;
 }
 
 .details {
@@ -19,4 +20,20 @@
 .details-time {
   text-align: left;
   width: 11rem;
+}
+
+/* 560px/16px = 35em */
+@media only screen and (max-width: 35em) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}
+
+/* 400px/16px = 25em */
+@media only screen and (max-width: 25em) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 1rem;
+    margin: 0 1rem;
+  }
 }
